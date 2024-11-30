@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Produto - Belleza Pura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Belleza Pura">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Produtos</a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="index.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção do Produto -->
+    <section id="produto">
+        <div class="produto-container">
+            <!-- Miniaturas -->
+            <div class="galeria-imagens">
+                <img class="miniatura" src="imagens/miniatura01.webp" alt="Creme Facial Vegano - 2" onclick="trocarImagem('imagens/miniatura01.webp')">
+                <img class="miniatura" src="imagens/miniatura02.webp" alt="Creme Facial Vegano - 3" onclick="trocarImagem('imagens/miniatura02.webp')">
+                <img class="miniatura" src="imagens/miniatura03.webp" alt="Creme Facial Vegano - 4" onclick="trocarImagem('imagens/miniatura03.webp')">
+            </div>
+
+            <!-- Principal -->
+            <div class="produto-imagem">
+                <img id="imagem-principal" src="imagens/creme_facial_vegano.webp" alt="Creme Facial Vegano">
+            </div>
+
+            <!-- Detalhes do Produto -->
+            <div class="produto-detalhes">
+                <h1>Creme Facial Vegano</h1>
+                <p class="descricao-produto">
+                    Este creme facial vegano é feito com ingredientes 100% naturais, proporcionando hidratação profunda
+                    e rejuvenescimento para a sua pele. Ideal para todos os tipos de pele.
+                </p>
+            </div>
+        </div>
+
+        <!-- Área de Compra -->
+        <div class="compra-container">
+            <div class="preco-produto">
+                <p class="preco">R$ 99,90</p>
+            </div>
+            <div class="comprar">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10">
+                <button class="btn-comprar">Comprar Agora</button>
+            </div>
+        </div>
+
+        <!-- Avaliações do Produto -->
+        <section id="avaliacoes">
+            <h2>Avaliações do Produto</h2>
+            <div class="avaliacoes-container">
+                <div class="avaliacao">
+                    <p class="avaliação-texto">"Maravilhoso! Minha pele nunca esteve tão hidratada. Super recomendo!"</p>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="usuario">Maria Silva</p>
+                </div>
+                <div class="avaliacao">
+                    <p class="avaliação-texto">"Excelente qualidade. O produto chegou rapidamente e é incrível!"</p>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="usuario">João Oliveira</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Belleza Pura. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#politica">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/kyraly.digital/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/agenciakyraly" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
